@@ -13,6 +13,7 @@ position = Vector2( 641.642, 627.674 )
 
 [node name="Platform" type="StaticBody2D" parent="." index="1"]
 
+editor/display_folded = true
 position = Vector2( 661.799, 924.911 )
 input_pickable = false
 collision_layer = 1
@@ -35,6 +36,7 @@ polygon = PoolVector2Array( -175.435, -41.3016, 168.528, -41.3016, 182.835, -37.
 
 [node name="Platform2" type="StaticBody2D" parent="." index="2"]
 
+editor/display_folded = true
 position = Vector2( 1233.8, 656.911 )
 input_pickable = false
 collision_layer = 1
@@ -57,6 +59,7 @@ polygon = PoolVector2Array( -175.435, -41.3016, 168.528, -41.3016, 182.835, -37.
 
 [node name="Platform3" type="StaticBody2D" parent="." index="3"]
 
+editor/display_folded = true
 position = Vector2( 1684.8, 377.911 )
 input_pickable = false
 collision_layer = 1
