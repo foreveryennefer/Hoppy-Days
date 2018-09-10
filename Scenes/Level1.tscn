@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scenes/Camera2D.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Scenes/PlatformTiles.tres" type="TileSet" id=3]
+[ext_resource path="res://Scenes/SpikesTop.tscn" type="PackedScene" id=4]
 
 [node name="Level1" type="Node2D"]
 
@@ -11,7 +12,6 @@ _sections_unfolded = [ "Transform" ]
 [node name="Player" parent="." index="0" instance=ExtResource( 1 )]
 
 position = Vector2( 641.642, 627.674 )
-world_limit = 1760
 
 [node name="Camera2D" parent="Player" index="2" instance=ExtResource( 2 )]
 
@@ -43,5 +43,9 @@ tile_data = PoolIntArray( -2293707, 4, 0, -2162649, 4, 0, -2162643, 4, 0, -21626
 __meta__ = {
 "_edit_group_": true
 }
+
+[node name="SpikesTop" parent="." index="2" instance=ExtResource( 4 )]
+
+position = Vector2( 1254.44, 628.628 )
 
 

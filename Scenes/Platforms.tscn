@@ -9,7 +9,7 @@
 [ext_resource path="res://Assets/GFX/Environment/ground_grass_small.png" type="Texture" id=7]
 [ext_resource path="res://Assets/GFX/Environment/ground_snow_small.png" type="Texture" id=8]
 
-[node name="Platforms" type="Node2D"]
+[node name="Platforms" type="Node2D" index="0"]
 
 [node name="Ground_Cake" type="Sprite" parent="." index="0"]
 
