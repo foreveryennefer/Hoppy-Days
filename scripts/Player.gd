@@ -27,6 +27,7 @@ func update_animation(motion):
 
 func _ready():
 	DOUBLE_JUMP_COUNTER = 0
+	Global.Player = self
 	
 func run():
 	if Input.is_action_pressed("ui_right") and not Input.is_action_pressed("ui_left"):
@@ -46,7 +47,7 @@ func fall(delta):
 		motion.y += GRAVITY * delta
 		
 	if position.y > world_limit:
-		end_game()
+		Global.GameState.end_game()
 
 func jump():
 	if Input.is_action_just_pressed("ui_up"):
@@ -57,5 +58,6 @@ func jump():
 			motion.y = JUMP_SPEED
 			DOUBLE_JUMP_COUNTER = 2
 			
-func end_game():
-	get_tree().change_scene("res://Scenes/GameOver.tscn")
+
+func hurt():
+	motion.y = JUMP_SPEED
