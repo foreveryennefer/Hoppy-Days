@@ -13,6 +13,7 @@
 script = ExtResource( 1 )
 _sections_unfolded = [ "Transform" ]
 starting_lives = 3
+coin_target = 2
 
 [node name="Player" parent="." index="0" instance=ExtResource( 2 )]
 
@@ -96,73 +97,77 @@ position = Vector2( 2108.87, 891.362 )
 
 [node name="Coin" parent="Coins" index="0" instance=ExtResource( 7 )]
 
-position = Vector2( 370.676, 20.1468 )
+position = Vector2( 716.404, 449.384 )
+frame = 5
 
 [node name="Coin2" parent="Coins" index="1" instance=ExtResource( 7 )]
 
 position = Vector2( 1400.15, 313.606 )
+frame = 5
 
 [node name="Coin3" parent="Coins" index="2" instance=ExtResource( 7 )]
 
 position = Vector2( 2688.5, 1180.38 )
-frame = 1
+frame = 4
 
 [node name="Coin4" parent="Coins" index="3" instance=ExtResource( 7 )]
 
 position = Vector2( 1479.19, -318.461 )
-frame = 1
+frame = 4
 
 [node name="Coin5" parent="Coins" index="4" instance=ExtResource( 7 )]
 
 position = Vector2( 4457.43, 210.988 )
-frame = 0
+frame = 3
 
 [node name="Coin6" parent="Coins" index="5" instance=ExtResource( 7 )]
 
 position = Vector2( 3589.87, -259.019 )
-frame = 0
+frame = 3
 
 [node name="Coin7" parent="Coins" index="6" instance=ExtResource( 7 )]
 
 position = Vector2( 3690.08, -1715.42 )
-frame = 5
 
 [node name="Coin8" parent="Coins" index="7" instance=ExtResource( 7 )]
 
 position = Vector2( 3688.41, -1478.25 )
-frame = 4
+frame = 1
 
 [node name="Coin9" parent="Coins" index="8" instance=ExtResource( 7 )]
 
 position = Vector2( 3688.41, -1259.46 )
-frame = 4
+frame = 1
 
 [node name="Coin10" parent="Coins" index="9" instance=ExtResource( 7 )]
 
 position = Vector2( 3680.06, -1055.7 )
-frame = 3
+frame = 0
 
 [node name="Coin11" parent="Coins" index="10" instance=ExtResource( 7 )]
 
 position = Vector2( 3940.6, -1484.93 )
-frame = 3
+frame = 0
 
 [node name="Coin12" parent="Coins" index="11" instance=ExtResource( 7 )]
 
 position = Vector2( 3444.56, -1474.91 )
-frame = 3
+frame = 0
 
 [node name="Coin13" parent="Coins" index="12" instance=ExtResource( 7 )]
 
 position = Vector2( 3977.62, -474.495 )
+frame = 5
 
 [node name="Coin14" parent="Coins" index="13" instance=ExtResource( 7 )]
 
 position = Vector2( 4966.1, -1605.19 )
+frame = 5
 
 [node name="Coin15" parent="Coins" index="14" instance=ExtResource( 7 )]
 
 position = Vector2( 3812.7, 1284.39 )
+frame = 5
 
 [connection signal="body_entered" from="Spikes/SpikesTop9" to="Spikes/SpikesTop9" method="_on_SpikesTop_body_entered"]
 
