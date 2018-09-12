@@ -21,6 +21,7 @@ func hurt():
 	lives -= 1
 	update_GUI()
 	Global.Player.hurt()
+	Global.GUI.animate_icon("Hurt")
 	if lives < 0:
 		end_game()
 
@@ -28,7 +29,7 @@ func coin_up():
 	coins += 1
 	update_GUI()
 	var multiple_of_coin_target = (coins % coin_target) == 0
-	print(multiple_of_coin_target)
+	Global.GUI.animate_icon("CoinPulse")
 	if multiple_of_coin_target:
 		print("Life up")
 		life_up()
@@ -36,3 +37,4 @@ func coin_up():
 func life_up():
 	lives += 1
 	update_GUI()
+	Global.GUI.animate_icon("LifePulse")
