@@ -3,6 +3,8 @@ extends Node2D
 export var starting_lives = 3
 export var coin_target = 2 #How many coins for an extra life
 
+onready var GUI = Global.GUI
+
 var lives
 var coins = 0
 
@@ -21,7 +23,7 @@ func hurt():
 	lives -= 1
 	update_GUI()
 	Global.Player.hurt()
-	Global.GUI.animate_icon("Hurt")
+	GUI.animate_icon("Hurt")
 	if lives < 0:
 		end_game()
 
@@ -29,7 +31,7 @@ func coin_up():
 	coins += 1
 	update_GUI()
 	var multiple_of_coin_target = (coins % coin_target) == 0
-	Global.GUI.animate_icon("CoinPulse")
+	GUI.animate_icon("CoinPulse")
 	if multiple_of_coin_target:
 		print("Life up")
 		life_up()
@@ -37,4 +39,4 @@ func coin_up():
 func life_up():
 	lives += 1
 	update_GUI()
-	Global.GUI.animate_icon("LifePulse")
+	GUI.animate_icon("LifePulse")

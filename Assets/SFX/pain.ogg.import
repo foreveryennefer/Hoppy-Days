@@ -11,5 +11,5 @@ dest_files=[ "res://.import/pain.ogg-1c84f14c5dd0b9d5c393aea8eb079eeb.oggstr" ]
 
 [params]
 
-loop=true
+loop=false
 loop_offset=0

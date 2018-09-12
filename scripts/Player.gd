@@ -54,10 +54,12 @@ func jump():
 		if DOUBLE_JUMP_COUNTER == 0:
 			motion.y = JUMP_SPEED
 			DOUBLE_JUMP_COUNTER = 1
+			Global.jump_sfx.play()
 		elif DOUBLE_JUMP_COUNTER == 1:
 			motion.y = JUMP_SPEED
 			DOUBLE_JUMP_COUNTER = 2
-			
+			Global.jump_sfx.play()
 
 func hurt():
 	motion.y = JUMP_SPEED
+	Global.pain_sfx.play()
