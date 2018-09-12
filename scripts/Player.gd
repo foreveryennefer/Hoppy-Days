@@ -1,11 +1,13 @@
 extends KinematicBody2D
 
 var motion = Vector2()
+var DOUBLE_JUMP_COUNTER
+
 const SPEED = 400
 const GRAVITY = 1000
 const UP = Vector2(0, -1)
 const JUMP_SPEED = -520
-var DOUBLE_JUMP_COUNTER
+const JUMP_BOOST = 2
 
 export var world_limit = 1760
 
@@ -59,6 +61,9 @@ func jump():
 			motion.y = JUMP_SPEED
 			DOUBLE_JUMP_COUNTER = 2
 			Global.jump_sfx.play()
+
+func boost():
+	motion.y = JUMP_SPEED * JUMP_BOOST
 
 func hurt():
 	motion.y = JUMP_SPEED
